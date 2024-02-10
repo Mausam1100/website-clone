@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: rgb(255, 123, 0);
+    --white: rgb(242, 241, 241);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo h1{
+    color: var(--orange);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 55px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.menu ul li a:hover {
+    color: var(--orange);
+}
+
+.search #find {
+    background: transparent;
+    padding: 13px 14px;
+    width: 220px;
+    height: 40px;
+    border: 1px solid var(--orange);
+    border-right: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    outline: none;
+    color: var(--white);
+    font-size: 16px;
+}
+
+#find::placeholder {
+    color: var(--white);
+    font-size: 16px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search button {
+    height: 40px;
+    background-color: var(--orange);
+    border: none;
+    color: var(--white);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 0px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.div-left {
+    display: flex;
+    color: var(--white);
+    flex-direction: column;
+    width: 50%;
+    gap: 5px;
+    margin-left: 71px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 7px;
+}
+
+.section .div-left h1 {
+    font-size: 55px;
+    padding-right: 260px;
+}
+
+.section h1 span {
+    color: var(--orange);
+    font-size: 63px;
+}
+
+main {
+    height: 89%;
+}
+
+.div-left p {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+}
+
+.btn {
+    width: 179px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: black;
+    font-weight: 600;
+    margin-top: 21px;
+    text-align: center;
+    transition: .2s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(207, 101, 2);
+}
+
+.div-right {
+    width: 22%;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    padding: 25px 30px 10px;
+    border-radius: 12px;
+    margin-right: 82px;
+}
+
+.div-right .heading h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0px;
+    background-color: white;
+    width: 100%;
+    height: 39px;
+    border-radius: 10px;
+    color: var(--orange);
+    padding-bottom: 38px;
+}
+
+.detail .info {
+    width: 100%;
+    height: 42px;
+    /* background-color: orange; */
+    margin: 30px 0px;
+}
+
+.detail .info input {
+    width: 100%;
+    height: 85%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--white);
+    border-bottom: 1px solid var(--orange);
+    font-size: 16px;
+}
+
+.detail .info input::placeholder {
+    color: var(--white);
+    font-size: 16px;
+}
+
+.div-right .btn2 {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 9px;
+    background-color: var(--orange);
+    border: none;
+    margin-top: -3px;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    background-color: rgb(207, 101, 2);
+}
+
+.register {
+    color: var(--white);
+    text-align: center;
+    margin: 15px 0px 11px;
+}
+
+.register .acc a {
+    text-decoration: none;
+    color: var(--orange);   
+}
+
+.media {
+    color: var(--white);
+}
+
+.media p {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.media .social a {
+    color: var(--white);
+    font-size: 33px;
+}
+
+.media .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 8px;
+}
